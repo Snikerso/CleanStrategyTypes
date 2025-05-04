@@ -41,6 +41,10 @@ export interface IRound {
   status?: "finished" | "active";
 }
 
+export interface IStats extends Record<string, {
+  userId: number;
+}> {}
+
 export enum SpaceEventTypes {
   CONNECT = "CONNECT",
   DISCONNECT = "DISCONNECT",
