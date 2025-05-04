@@ -35,9 +35,7 @@ export interface IRound {
     endDate: Date;
     status?: "finished" | "active";
 }
-export interface IStats extends Record<string, {
-    userId: number;
-}> {
+export interface IStats extends Record<string, Record<string, number>> {
 }
 export declare enum SpaceEventTypes {
     CONNECT = "CONNECT",
