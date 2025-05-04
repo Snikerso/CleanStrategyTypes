@@ -22,13 +22,13 @@ export interface ICurrentUser {
   id: string;
   displayName: string;
   email: string;
+  deviceId: string;
   tenants: ISpace[];
 }
 
 export interface IUser {
   id: string;
   displayName: string;
-  color: string;
 }
 
 export interface IRound {
