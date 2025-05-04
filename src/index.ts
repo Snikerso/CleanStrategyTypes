@@ -4,6 +4,8 @@ export interface IVote {
   userId: string;
   taskId: string;
   count?: number;
+  spaceId: string;
+  createdAt: Date;
 }
 
 export type ITask = {
