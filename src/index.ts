@@ -74,6 +74,7 @@ type ResponseMessageBase = {
 export type VoteMessageResponse = ResponseMessageBase & {
   vote: IVote;
 };
+
 export type VoteDeleteMessageResponse = ResponseMessageBase & {
   voteId: string;
 };
@@ -87,6 +88,7 @@ export type ConnectMessageResponse = ResponseMessageBase & {
   tasks: ITask[];
   users: IUser[];
   currentPeriod: IRound;
+  stats: IStats;
 };
 
 export type ResetVotesMessageResponse = ResponseMessageBase & {

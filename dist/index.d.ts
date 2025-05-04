@@ -75,6 +75,7 @@ export type ConnectMessageResponse = ResponseMessageBase & {
     tasks: ITask[];
     users: IUser[];
     currentPeriod: IRound;
+    stats: IStats;
 };
 export type ResetVotesMessageResponse = ResponseMessageBase & {
     votes: IVote[];
