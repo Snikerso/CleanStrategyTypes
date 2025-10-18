@@ -74,6 +74,7 @@ export type ConnectMessageResponse = ResponseMessageBase & {
     users: IUser[];
     currentPeriod: IRound;
     stats: IStats;
+    categories: any[];
 };
 export type ResetVotesMessageResponse = ResponseMessageBase & {
     votes: IVote[];

@@ -41,7 +41,7 @@ export interface IRound {
   status?: "finished" | "active";
 }
 
-export interface IStats extends Record<string, Record<string, number>> {}
+export interface IStats extends Record<string, Record<string, number>> { }
 
 export enum SpaceEventTypes {
   CONNECT = "CONNECT",
@@ -87,6 +87,7 @@ export type ConnectMessageResponse = ResponseMessageBase & {
   users: IUser[];
   currentPeriod: IRound;
   stats: IStats;
+  categories: any[];
 };
 
 export type ResetVotesMessageResponse = ResponseMessageBase & {
