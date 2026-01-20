@@ -84,10 +84,10 @@ export type StartRoundResponseMessage = ResponseMessageBase & {
 export type ConnectMessageResponse = ResponseMessageBase & {
   votes: IVote[];
   tasks: ITask[];
-  users: IUser[];
+  users: IUser[]; // These are actually players (IUser type for compatibility)
   currentPeriod: IRound;
   stats: IStats;
-  categories: any[];
+  categories?: any[]; // Optional categories
 };
 
 export type ResetVotesMessageResponse = ResponseMessageBase & {
