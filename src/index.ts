@@ -79,7 +79,7 @@ export enum SpaceEventTypes {
   DELETE_CATEGORY = "DELETE_CATEGORY",
 }
 //
-//
+
 // RequestMessage
 
 export type VoteMessageBody = {
