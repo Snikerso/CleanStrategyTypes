@@ -78,7 +78,7 @@ export enum SpaceEventTypes {
   CREATE_CATEGORY = "CREATE_CATEGORY",
   DELETE_CATEGORY = "DELETE_CATEGORY",
 }
-
+//
 //
 // RequestMessage
 
